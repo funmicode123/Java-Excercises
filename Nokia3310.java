@@ -24,7 +24,7 @@ public class Nokia3310 {
 		13. SIM services
 		""";
 
-		System.out.println(" Menu" + menu);
+		System.out.println("Menu" + menu);
 
 	System.out.print("Menu option: ");
 	int menuOption = scanner.nextInt();
