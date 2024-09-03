@@ -33,7 +33,7 @@ public class PizzaFunction {
 			return 6;
 
 		case 3:
-			return 6;
+			return 8;
 
 		case 4: 
 			return 12;
@@ -50,8 +50,6 @@ public class PizzaFunction {
 	public static int numberOfPizzaBoxes(int guestNumber, int slicesPerBox){
 	if (guestNumber % slicesPerBox == 0)
 		return guestNumber / slicesPerBox;
-	if (slicesPerBox <= 0){
-		throw new IllegalArgumentException("Number of slices must be positive");
 	else
 		return guestNumber / slicesPerBox + 1;
 
@@ -60,7 +58,7 @@ public class PizzaFunction {
 
 	public static int leftOver (int boxesNeeded, int slicesPerBox, int guestNumber){
 
-	return (numberOfPizzaBoxes * slicesPerBox) - guestNumber;
+	return (boxesNeeded * slicesPerBox) - guestNumber;
 
 	}
 
