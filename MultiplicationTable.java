@@ -6,7 +6,7 @@ public class MultiplicationTable{
 	
 		for ( int counter = 1; counter<= 10; counter++){
 		System.out.printf("%d * %d = %d", count, counter, counter * count);
-		System.out.println();
+		System.out.print(" ");
 		}
 		System.out.println();
 

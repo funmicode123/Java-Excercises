@@ -24,7 +24,7 @@ public class PatternsFunction2 {
 	}
 
 	public static void printInvertedPattern(int row){		
-		for(int counter =row; counter > 0; counter--){
+		for(int counter = row; counter > 0; counter--){
 			for(int inner = 0; inner < counter - 1; inner++){
 			System.out.print("* ");
 			}
