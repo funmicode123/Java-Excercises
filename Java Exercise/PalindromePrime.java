@@ -23,8 +23,8 @@ public class PrimeNumber1 {
 
     public static boolean getPalindrome(int number) {
         String numberToString = Integer.toString(number);
-        String reversedString = new StringBuilder(numberToString).reverse().toString(); 
-        return numberToString.equals(reversedString); 
+        String reversedStr = new StringBuilder(numberToString).reverse().toString(); 
+        return numberToString.equals(reversedStr); 
     }
 
     public static void printPalindromePrime(int count) {
