@@ -1,11 +1,10 @@
 public class Asterisks {
 	public static void main(String... args){
-	 String input = " * ";
+	 String input = "* ";
 
-		for( int counter = 1; counter <= 6; counter++){
-			for(int inner = 0; inner < counter; inner++){
-			System.out.print(input);
-			System.out.print("");
+		for( int row = 1; row <= 6; row++){
+			for(int star = 0; star < row; star++){
+				System.out.print(input);
 
 			}
 
@@ -16,9 +15,9 @@ public class Asterisks {
 			System.out.println();
 
 
-		for(int counter = 6; counter > 0; counter--){
+		for(int row = 6; row > 0; row--){
 
-			for(int inner = 0; inner <= counter - 1; inner++) {
+			for(int star = 0; star <= row - 1; star++) {
 				System.out.print(input);
 				
 
@@ -28,12 +27,12 @@ public class Asterisks {
 
 		}
 
-		for(int counter = 6; counter >= 1; counter--){
-			for(int space = 0; space < 6 - counter; space++){
+		for(int row = 6; row >= 1; row--){
+			for(int space = 0; space < 6 - row; space++){
 				System.out.print("  ");
 			}
 
-			for(int inner = 1; inner <= counter; inner++){
+			for(int star = 1; star <= row; star++){
 
 				System.out.print("* ");
 
@@ -44,13 +43,13 @@ public class Asterisks {
 		}
 			System.out.println();
 
-		for(int counter = 6; counter >= 1; counter--){
-			for(int space = 0; space < counter-1; space++){
+		for(int row = 6; row >= 1; row--){
+			for(int space = 0; space < row - 1; space++){
 				System.out.print("  ");
 
 			}
 
-			for(int inner = 1; inner <=6- counter + 1; inner++){
+			for(int star = 1; star <= 6 - row + 1; star++){
 			System.out.print("* ");
 
 			}
